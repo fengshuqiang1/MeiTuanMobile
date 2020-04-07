@@ -1,0 +1,40 @@
+.menu-container{
+	position: absolute;
+	top: 5.45rem;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	overflow: hidden;
+}
+.sidebar-container{
+	width: 4.25rem;
+	background-color: #efefef;
+	overflow: auto;
+	padding-bottom: 4.25rem;
+}
+.sidebar-item,
+.sidebar-link{
+	width: 100%;
+}
+.sidebar-item{
+	font-size: 0.7rem;
+	color: #656565;
+	text-align: center;
+	border-bottom: 1px solid #bfbfbf;
+	height: 3.0rem;
+}
+.sidebar-item.active{
+	background-color: #fff;
+}
+.sidebar-link{
+	display: block;
+	height: 100%;
+	line-height: 3.0rem;
+}
+.sidebar-icon{
+	width: 1.0rem;
+	height: 1.0rem;
+	vertical-align: -0.15rem;
+	margin-right: 0.25rem;
+}

@@ -1,0 +1,66 @@
+.header-search{
+	width: 100%;
+	height: 2.0rem;
+	position: absolute;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.header-location{
+	position: relative;
+	margin-right: 1.0rem;
+	border-radius: 0.65rem;
+	background-color: rgba(0, 0, 0, 0.33);
+	width: 4.6rem;
+	height: 1.4rem;
+}
+.header-location-icon{
+	display: inline-block;
+	height: 1.0rem;
+	width: 0.75rem;
+	margin-left: 0.3rem;
+	margin-top: 0.25rem;
+	background-image: url('../img/locationIcon.png');
+	background-size: cover;
+}
+.header-location-text{
+	position: relative;
+	display: inline-block;
+	font-size: 0.7rem;
+	color: #fff;
+	vertical-align: 0.25rem;
+}
+.header-location::after{
+	content: ' ';
+	display: block;
+	width: 0.7rem;
+	height: 0.7rem;
+	background-image: url('../img/arrowIcon.png');
+	background-size: cover;
+	position: absolute;
+	top: 0.4rem;
+	right: 0.1rem;
+}
+.header-searchBar{
+	position: relative;
+	width: 8.5rem;
+	height: 1.5rem;
+	background-color: #fff;
+	border-radius: 1.0rem;
+	padding: 0.45rem 0 0 1.5rem;
+	font-size: 0.7rem;
+	color: #ddd;
+}
+.header-searchBar::before{
+	content: ' ';
+	display: block;
+	width: 0.7rem;
+	height: 0.7rem;
+	background-image: url(../img/searchIcon.png);
+	-webkit-background-size: cover;
+	background-size: cover;
+	position: absolute;
+	top: 0.4rem;
+	left: 0.5rem;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>meituan</title>
+	<meta name="viewport" content = 'width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1,minimum-scale=1'>
+	<script type="text/javascript">
+		(function(){
+			//设置HTML的font-size属性的值
+			var docEl = document.documentElement;
+			function setRemUnit(){
+				var ratio = 18.75;//设置系数，方便相对rem的计算
+				var viewWidth = docEl.clientWidth || docEl.getBoundingClientRect().width || window.innerWidth;
+				docEl.style.fontSize = viewWidth/ratio + 'px';
+			}
+			setRemUnit();
+			window.addEventListener('resize', setRemUnit, false);
+		})();
+	</script>
+	<link rel="stylesheet" href="../lib/reset.css">
+	<link rel="stylesheet" href="./header/header.css">
+	<link rel="stylesheet" href="./searchBar/searchBar.css">
+	<link rel="stylesheet" href="./category/category.css">
+	<link rel="stylesheet" href="./shopsList/shopsList.css">
+	<link rel="stylesheet" href="./stars/stars.css">
+	<link rel="stylesheet" href="../common/bottomBar/bottomBar.css">
+</head>
+<body>
+	<!-- 头部开始 -->
+	<div class="header-container">
+		<div class="header-search">
+			<div class="header-location">
+				<div class="header-location-icon"></div>
+				<div class="header-location-text">郑州市</div>
+			</div>
+			<div class="header-searchBar">鸡翅</div>
+		</div>
+		<div class="header-bg"><img src="https://app.nihaoshijie.com.cn/upload/bannertemp.e8a6fa63.jpg" alt="" class="header-bg-img"></div>
+	</div>
+	<!-- 头部结束 -->
+	<!-- 头部开始 -->
+	<div class="category-container"></div>
+	<!-- 分类结束 -->
+	<!-- 商家列表开始 -->
+	<div class="shops-container">
+		<h3 class="shops-outer-title">
+			<span class="shops-line"></span>
+			<span>附近商家</span>
+			<span class="shops-line"></span>
+		</h3>
+		<div class="shops-list"></div>
+		<div class="shops-loading">加载中</div>
+	</div>
+	<!-- 商家列表结束 -->
+	<!-- 底部栏开始 -->
+	<div class="bottomBar-container"></div>
+	<!-- 底部栏结束 -->
+	<script src="../lib/jquery.min.js"></script>
+	<script src="category/category.js"></script>
+	<script src="shopsList/shopsList.js"></script>
+	<script src="stars/stars.js"></script>
+	<script src="../common/bottomBar/bottomBar.js"></script>
+	<script>
+		//实现跳转页面
+		window.onload=function(){
+			$('.shops-item').first().on('click', function(){
+				window.location.href = "../menu/menu.html";
+			});
+		}
+	</script>
+</body>
+</html>

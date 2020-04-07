@@ -1,0 +1,93 @@
+.order-container{
+	width: 100%;
+}
+.order-item{
+	width: 100%;
+	border-top: 0.5rem solid #efefef;
+}
+.order-item-top{
+	width: 100%;
+	display: flex;
+	border-bottom: 1px solid #e0e0e0;
+	padding-bottom: 0.75rem;
+}
+.order-img{
+	width: 2.0rem;
+	height: 2.0rem;
+	border-radius: 50%;
+	margin: 0.4rem 0.75rem 0;
+}
+.order-info{
+	flex: 1;
+	font-size: 0.7rem;
+}
+.order-title{
+	height: 2.4rem;
+	line-height: 2.4rem;
+	border-bottom: 1px solid #e0e0e0;
+}
+.order-name{
+	float: left;
+	font-size: 0.8rem;
+	font-weight: bolder;
+	width: 9.5rem;
+	position: relative;
+}
+.order-name::after{
+	content: ' ';
+	display: block;
+	width: 0.4rem;
+	height: 0.4rem;
+	border: 1px solid #999;
+	border-width: 1px 1px 0 0;
+	transform: rotate(45deg);
+	position: absolute;
+	top: 1.05rem;
+	right: 0.1rem;
+}
+.order-status{
+	float: right;
+	margin-right: 0.75rem;
+	color: #999;
+}
+.order-product{
+	padding-top: 0.4rem;
+}
+.order-product-item{
+	margin-bottom: 0.4rem;
+}
+.order-product-name,
+.order-product-num{
+	color: #666;
+}
+.order-product-num{
+	float: right;
+	margin-right: 0.75rem;
+}
+.order-product-total{
+	text-align: end;
+	margin-right: 0.75rem;
+}
+.order-product-total strong{
+	font-weight: bolder;
+}
+.order-comment{
+	/* height: 2.5rem;父盒子由内容撑开，所以不用设置固定的高度 */
+	text-align: right;
+	padding: 0.5rem 0;
+}
+.order-comment-link{
+	display: inline-block;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	width: 5.0rem;
+	font-size: 0.7rem;
+	text-align: center;
+	margin-right: 0.75rem;
+	background-color: rgb(253, 202, 87);
+}
+.order-loading{
+	padding: 1.0rem 0 4.0rem;
+	text-align: center;
+	color: #999;
+}

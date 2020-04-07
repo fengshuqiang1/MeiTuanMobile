@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>my</title>
+	<meta name="viewport" content = 'width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1,minimum-scale=1'>
+	<script type="text/javascript">
+		(function(){
+			//设置HTML的font-size属性的值
+			var docEl = document.documentElement;
+			function setRemUnit(){
+				var ratio = 18.75;//设置系数，方便相对rem的计算
+				var viewWidth = docEl.clientWidth || docEl.getBoundingClientRect().width || window.innerWidth;
+				docEl.style.fontSize = viewWidth/ratio + 'px';
+			}
+			setRemUnit();
+			window.addEventListener('resize', setRemUnit, false);
+		})();
+	</script>
+	<link rel="stylesheet" href="../lib/reset.css">
+	<link rel="stylesheet" href="../common/bottomBar/bottomBar.css">
+	<link rel="stylesheet" href="my.css">
+</head>
+<body>
+	<!-- 头部开始 -->
+	<div class="my-container">
+		<div class="header-container">
+			<img class="header-img" src="http://i.waimai.meituan.com/static/img/default-avatar.png">
+			<p class="header-username">美团小骑手&gt;</p>
+		</div>
+		<div class="function-container">
+			<div class="function-item"><a href="###" class="function-address">收货地址管理</a></div>
+			<div class="function-item"><a href="###" class="function-discount">商家代金券</a></div>
+			<div class="function-item"><a href="###" class="function-opinion">意见反馈</a></div>
+			<div class="function-item"><a href="###" class="function-question">常见问题</a></div>
+		</div>
+		<p class="serviceTel">客服电话：101-097-77</p>
+		<p class="serviceTime">服务时间：9:00-23:00</p>
+	</div>
+	<!-- 头部结束 -->
+	<!-- 底部栏开始 -->
+	<div class="bottomBar-container"></div>
+	<!-- 底部栏结束 -->
+	<script src="../lib/jquery.min.js"></script>
+	<script src="../common/bottomBar/bottomBar.js"></script>
+</body>
+</html>

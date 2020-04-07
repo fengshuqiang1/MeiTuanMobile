@@ -1,0 +1,25 @@
+.tabbar-container{
+	padding-top: 3.2rem;
+	width: 100%;
+	display: flex;
+	font-size: 0.8rem;
+}
+.tabbar-item{
+	flex: 1;
+	text-align: center;
+	height: 2.25rem;
+	line-height: 2.25rem;
+	position: relative;
+	color: #666;
+}
+.tabbar-item.active::after{
+	content: '';
+	display: block;
+	height: 0.2rem;
+	width: 3.0rem;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #ffd161;
+}

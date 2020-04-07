@@ -1,0 +1,28 @@
+.header-container{
+	height: 3.2rem;
+	border-bottom: 1px solid #b2b2b2;
+	background-color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99;
+}
+.header-btn{
+	display: block;
+	width: 27px;
+	height: 27px;
+	position: absolute;
+	top: 18.5px;
+	left: 12px;
+	background-image: url(img/back.png);
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.header-title{
+	font-size: 0.8rem;
+	font-weight: bold;
+	text-align: center;
+	line-height: 3.2rem;
+	color: #2f2f2f;
+}

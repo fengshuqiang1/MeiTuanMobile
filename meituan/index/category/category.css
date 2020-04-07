@@ -1,0 +1,22 @@
+.category-container{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 0.5rem;
+}
+.category-item{
+	width: 25%;
+}
+.category-link{
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+.category-img{
+	width: 2.35rem;
+	margin-bottom: 0.5rem;
+}
+.category-title{
+	font-size: 0.7rem;
+	margin-bottom: 0.5rem;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>menu</title>
+	<meta name="viewport" content = 'width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1,minimum-scale=1'>
+	<script type="text/javascript">
+		(function(){
+			//设置HTML的font-size属性的值
+			var docEl = document.documentElement;
+			function setRemUnit(){
+				var ratio = 18.75;//设置系数，方便相对rem的计算
+				var viewWidth = docEl.clientWidth || docEl.getBoundingClientRect().width || window.innerWidth;
+				docEl.style.fontSize = viewWidth/ratio + 'px';
+			}
+			setRemUnit();
+			window.addEventListener('resize', setRemUnit, false);
+		})();
+	</script>
+	<link rel="stylesheet" href="../lib/reset.css">
+	<link rel="stylesheet" href="../common/headerTitle/headerTitle.css">
+	<link rel="stylesheet" href="../common/tabbar/tabbar.css">
+	<link rel="stylesheet" href="sidebar/sidebar.css">
+	<link rel="stylesheet" href="dishes/dishes.css">
+	<link rel="stylesheet" href="shopBar/shopBar.css">
+</head>
+<body>
+	<!-- 头部开始 -->
+	<div class="header-container">
+		<a class="header-btn" href="../index/index.html"></a>
+		<h2 class="header-title">深圳麦当劳前海二餐厅</h2>
+	</div>
+	<!-- 头部结束 -->
+
+	<!-- tabbar开始 -->
+	<div class="tabbar-container"></div>
+	<!-- tabbar结束 -->
+
+	<!-- 菜单开始 -->
+	<div class="menu-container">
+		<div class="sidebar-container"></div>
+		<div class="dishes-container">
+			<p class="dishes-typeTitle"></p>
+			<div class="dishes-list"></div>
+		</div>
+		<!-- 购物车开始 -->
+		<div class="cart-container"></div>
+		<div class="cart-cover hide"></div>
+		<!-- 购物车结束 -->
+	</div>
+	<!-- 菜单结束 -->
+	
+	<script src="../lib/jquery.min.js"></script>
+	<script src="../common/tabbar/tabbar.js"></script>
+	<script src="sidebar/sidebar.js"></script>
+	<script src="dishes/dishes.js"></script>
+	<script src="shopBar/shopBar.js"></script>
+</body>
+</html>
